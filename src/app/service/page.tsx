@@ -9,7 +9,7 @@ const ServicePage = () => {
       
       <ul className= {styles.list}>
 
-        <li><a href="/service/musarat-naz">This is Musarat Naz Page</a></li>
+        <li><Link href="/service/web-development">This is Web Development Page</Link></li>
 
          </ul>
       
