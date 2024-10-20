@@ -1,20 +1,29 @@
-import Link from 'next/link' 
-import styles from "../service/service.module.css";
-import React from 'react'
+import React from "react";
+import cssStyle from "./service.module.css";
+
+console.log(cssStyle, "CSS-Style");
 
 const ServicePage = () => {
   return (
-    <div className= {styles.container}>
-      <h3 className= {styles.header}>This is Service Page</h3>
-      
-      <ul className= {styles.list}>
-
-        <li><Link href="/service/web-development">This is Web Development Page</Link></li>
-
-         </ul>
-      
+    <div>
+      <h2 className={cssStyle.black}>This is our Service Page</h2>
+      <p className={cssStyle.blue}>
+        Our team specializes in creating visually stunning and highly functional
+        user interfaces. We use the latest technologies like Garnative Ai
+        ,Next.js
+      </p>
+      <ul className={cssStyle.green}>
+        <li>
+          <b>Ui Web Design</b> - Tailored interfaces that match your brand and
+          provide a seamless user experience.
+        </li>
+        <li>
+          <b>Responsive</b> - Ensuring your website looks great and
+          functions perfectly across all devices.
+        </li>
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default ServicePage
+export default ServicePage;
